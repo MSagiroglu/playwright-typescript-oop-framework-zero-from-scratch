@@ -1,0 +1,2 @@
+# Normalise line endings across OSes for reproducible, diff-clean checkouts.
+* text=auto eol=lf

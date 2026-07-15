@@ -1,0 +1,54 @@
+{
+  "name": "playwright-typescript-framework",
+  "version": "1.0.0",
+  "description": "Portfolio-quality end-to-end test automation framework built with Playwright and TypeScript (Page Object Model, custom fixtures, UI + API, CI).",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:critical": "playwright test --grep @critical",
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test tests/api",
+    "test:sharded": "tsx scripts/run-sharded.ts",
+    "test:dynamic": "tsx scripts/run-dynamic.ts",
+    "report": "playwright show-report",
+    "merge-report": "playwright merge-reports --reporter html ./blob-report",
+    "generate:data": "tsx scripts/generate-test-data.ts",
+    "export:report": "tsx scripts/export-report.ts",
+    "email:report": "tsx scripts/send-report-email.ts",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "test-automation",
+    "e2e",
+    "page-object-model",
+    "qa",
+    "sdet"
+  ],
+  "devDependencies": {
+    "@eslint/js": "9.17.0",
+    "@faker-js/faker": "9.3.0",
+    "@playwright/test": "1.49.1",
+    "@types/node": "22.10.2",
+    "@types/nodemailer": "6.4.17",
+    "eslint": "9.17.0",
+    "prettier": "3.4.2",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2",
+    "typescript-eslint": "8.18.1"
+  },
+  "dependencies": {
+    "exceljs": "4.4.0",
+    "nodemailer": "6.9.16",
+    "pdf-lib": "1.17.1",
+    "zod": "3.24.1"
+  }
+}

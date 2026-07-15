@@ -1,0 +1,2 @@
+# EN: Keeps the downloads/ folder in git; downloaded artifacts themselves are ignored.
+# TR: downloads/ klasorunu git iciinde tutar; indirilen dosyalar yok sayilir.

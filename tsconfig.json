@@ -1,0 +1,23 @@
+{
+  // EN: Strict TypeScript config for the whole project. / TR: Tüm proje için katı TypeScript yapılandırması.
+  "compilerOptions": {
+    "target": "ES2022", // EN: modern JS output / TR: modern JS çıktısı
+    "module": "ESNext", // EN: ESM modules / TR: ESM modülleri
+    "moduleResolution": "Bundler", // EN: bundler-style resolution / TR: bundler tarzı çözümleme
+    "lib": ["ES2022", "DOM"], // EN: available type libs / TR: kullanılabilir tip kütüphaneleri
+    "strict": true, // EN: all strict checks on / TR: tüm katı kontroller açık
+    "noImplicitOverride": true, // EN: require `override` keyword / TR: `override` anahtar kelimesini zorunlu kıl
+    "noUnusedLocals": true, // EN: error on unused vars / TR: kullanılmayan değişkende hata
+    "noUnusedParameters": true, // EN: error on unused params / TR: kullanılmayan parametrede hata
+    "noFallthroughCasesInSwitch": true, // EN: guard switch fallthrough / TR: switch fallthrough'a karşı koru
+    "forceConsistentCasingInFileNames": true, // EN: case-correct imports / TR: büyük/küçük harf tutarlı importlar
+    "esModuleInterop": true, // EN: smooth CJS/ESM interop / TR: sorunsuz CJS/ESM birlikte çalışması
+    "skipLibCheck": true, // EN: skip node_modules type-check for speed / TR: hız için node_modules tip kontrolünü atla
+    "resolveJsonModule": true, // EN: allow importing .json / TR: .json import'una izin ver
+    "types": ["node"], // EN: include Node globals / TR: Node global'lerini dahil et
+    "outDir": "dist",
+    "noEmit": true // EN: type-check only, no output / TR: yalnız tip kontrolü, çıktı yok
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist", "playwright-report", "test-results"]
+}

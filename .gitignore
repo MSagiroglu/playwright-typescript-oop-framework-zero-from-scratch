@@ -1,0 +1,27 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+reports/
+playwright/.cache/
+blob-report/
+all-blob-reports/
+
+# Cached authenticated storage state generated at runtime
+# EN: Auth session cached at runtime — never committed.
+# TR: Çalışma anında üretilen oturum önbelleği — asla commit'lenmez.
+.auth/
+
+# EN: Files downloaded during tests — the folder is kept (.gitkeep), its contents are not.
+# TR: Testler sırasında indirilen dosyalar — klasör korunur (.gitkeep), içeriği commit'lenmez.
+downloads/*
+!downloads/.gitkeep
+
+# Local environment overrides
+.env
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
